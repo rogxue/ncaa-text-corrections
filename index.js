@@ -86,4 +86,6 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDER9", "St. Francis (IL)");
   text = text.replace("PLACEHOLDER0", "St. Edward's");
   text = text.replace("PLACEHOLDERA", "St. Thomas");
+
+  return text;
 }
