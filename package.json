@@ -1,5 +1,5 @@
 {
-  "name": "rogxue-ncaa-text-corrections",
+  "name": "ncaa-text-corrections",
   "version": "0.0.1",
   "description": "Some team name cleaning from scraping NCAA website.",
   "main": "index.js",
