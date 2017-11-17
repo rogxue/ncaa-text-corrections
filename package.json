@@ -1,0 +1,12 @@
+{
+  "name": "rogxue-ncaa-text-corrections",
+  "version": "0.0.1",
+  "description": "Some team name cleaning from scraping NCAA website.",
+  "main": "index.js",
+  "author": "Roger Xue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogxue/ncaa-text-corrections"
+  },
+  "license": "MIT"
+}
