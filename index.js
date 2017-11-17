@@ -1,4 +1,4 @@
-exports.teamNameCorrections(text) {
+exports.teamNameCorrections = function(text) {
   text = text.replace("St. Peter's", "PLACEHOLDER1");
   text = text.replace("St. Francis (Pa.)", "PLACEHOLDER2");
   text = text.replace("St. Francis (B'klyn)", "PLACEHOLDER3");
