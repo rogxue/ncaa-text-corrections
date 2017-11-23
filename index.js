@@ -10,6 +10,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Francis (Ill.)", "PLACEHOLDER9");
   text = text.replace("St. Edward's", "PLACEHOLDER0");
   text = text.replace("St. Thomas", "PLACEHOLDERA");
+  text = text.replace("St. Louis", "PLACEHOLDERB");
 
   text = text.replace(/Ariz[.]/g, "Arizona");
   text = text.replace(/Ark[.]/g, "Arkansas");
@@ -69,10 +70,12 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/St[.]/g, "State");
   text = text.replace(/Steph[.]/g, "Stephen");
   text = text.replace(/Tenn[.]/g, "Tennessee");
+  text = text.replace(/[(]Tennessee[)]/g, "(TN)");
   text = text.replace(/ U[.]/g, " University");
   text = text.replace(/ Univ[.]/g, "");
   text = text.replace(/Vall[.]/g, "Valley");
   text = text.replace(/Wash[.]/g, "Washington");
+  text = text.replace(/Westmin[.]/g, "Westminster");
   text = text.replace(/Wis[.]/g, "Wisconsin");
   text = text.replace(/W.Va[.]/g, "West Virginia");
 
@@ -87,6 +90,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDER9", "St. Francis (IL)");
   text = text.replace("PLACEHOLDER0", "St. Edward's");
   text = text.replace("PLACEHOLDERA", "St. Thomas");
+  text = text.replace("PLACEHOLDERB", "St. Louis");
 
   return text;
 }
