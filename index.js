@@ -12,6 +12,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Thomas", "PLACEHOLDERA");
   text = text.replace("St. Louis", "PLACEHOLDERB");
 
+  text = text.replace(/Anch[.]/g, "Anchorage");
   text = text.replace(/Ariz[.]/g, "Arizona");
   text = text.replace(/Ark[.]/g, "Arkansas");
   text = text.replace(/B'klyn/g, "Brooklyn");
