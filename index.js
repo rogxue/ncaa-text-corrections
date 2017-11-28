@@ -11,6 +11,8 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Edward's", "PLACEHOLDER0");
   text = text.replace("St. Thomas", "PLACEHOLDERA");
   text = text.replace("St. Louis", "PLACEHOLDERB");
+  text = text.replace("St. Louis", "PLACEHOLDERB");
+  text = text.replace("St. Mary's (Md.)", "PLACEHOLDERC");
 
   text = text.replace(/Anch[.]/g, "Anchorage");
   text = text.replace(/Ariz[.]/g, "Arizona");
@@ -54,6 +56,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/[(]Minn[.][)]/g, "(MN)");
   text = text.replace(/Miss[.]/g, "Mississippi");
   text = text.replace(/Mo[.]/g, "Missouri");
+  text = text.replace(/[(]Mont[.][)]/g, "(MT)");
   text = text.replace(/N'western/g, "Northwestern");
   text = text.replace(/N'west/g, "Northwest");
   text = text.replace(/N[.]C[.]/g, "North Carolina");
@@ -92,6 +95,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDER0", "St. Edward's");
   text = text.replace("PLACEHOLDERA", "St. Thomas");
   text = text.replace("PLACEHOLDERB", "St. Louis");
+  text = text.replace("PLACEHOLDERC", "St. Mary's (MD)");
 
   return text;
 }
