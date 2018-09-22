@@ -1,6 +1,7 @@
 exports.teamNameCorrections = function(text) {
   text = text.replace("St. Peter's", "PLACEHOLDER1");
   text = text.replace("St. Francis", "PLACEHOLDER2");
+  text = text.replace("St. Jos. (Brkln.)", "PLACEHOLDER3");
   text = text.replace("St. John's", "PLACEHOLDER6");
   text = text.replace("St. Bonaventure", "PLACEHOLDER7");
   text = text.replace("Mt. St. Mary's", "PLACEHOLDER8");
@@ -9,7 +10,9 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Louis", "PLACEHOLDERB");
   text = text.replace("St. Mar", "PLACEHOLDERC");
   text = text.replace("St. Cloud", "PLACEHOLDERD");
+  text = text.replace("St. Augustine", "PLACEHOLDERE");
 
+  text = text.replace(/Advent[.]/g, "Adventist");
   text = text.replace(/Ala[.]/g, "Alabama");
   text = text.replace(/Anch[.]/g, "Anchorage");
   text = text.replace(/Ariz[.]/g, "Arizona");
@@ -22,6 +25,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Caro[.]/g, "Carolina");
   text = text.replace(/Cent[.]/g, "Central");
   text = text.replace(/Chris[.]/g, "Christopher");
+  text = text.replace(/Christ[.]/g, "Christian");
   text = text.replace(/[(]Colo[.][)]/g, "(CO)");
   text = text.replace(/Colo[.]/g, "Colorado");
   text = text.replace(/Col[.]/g, "College");
@@ -34,7 +38,8 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/East[.]/g, "Eastern");
   text = text.replace(/Eng[.]/g, "Engalnd");
   text = text.replace(/Fair[.]/g, "Fairbanks");
-  text = text.replace(/Fla[.]/g, "FL");
+  text = text.replace(/Fla[.]/g, "Florida");
+  text = text.replace(/FL/g, "Florida");
   text = text.replace(/Fran[.]/g, "Francisco");
   text = text.replace(/Ga[.]/g, "Georgia");
   text = text.replace(/Geo[.]/g, "George");
@@ -81,6 +86,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/[(]Tennessee[)]/g, "(TN)");
   text = text.replace(/ U[.]/g, " University");
   text = text.replace(/ Univ[.]/g, "");
+  text = text.replace(/Val[.]/g, "Valley");
   text = text.replace(/Vall[.]/g, "Valley");
   text = text.replace(/Wash[.]/g, "Washington");
   text = text.replace(/Westmin[.]/g, "Westminster");
@@ -89,6 +95,7 @@ exports.teamNameCorrections = function(text) {
 
   text = text.replace("PLACEHOLDER1", "St. Peter's");
   text = text.replace("PLACEHOLDER2", "St. Francis");
+  text = text.replace("PLACEHOLDER3", "St. Joseph's (Brooklyn)");
   text = text.replace("PLACEHOLDER6", "St. John's");
   text = text.replace("PLACEHOLDER7", "St. Bonaventure");
   text = text.replace("PLACEHOLDER8", "Mt. St. Mary's");
@@ -97,6 +104,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDERB", "St. Louis");
   text = text.replace("PLACEHOLDERC", "St. Mar");
   text = text.replace("PLACEHOLDERD", "St. Cloud");
+  text = text.replace("PLACEHOLDERE", "St. Augustine");
 
   return text;
 }
