@@ -11,6 +11,9 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Mar", "PLACEHOLDERC");
   text = text.replace("St. Cloud", "PLACEHOLDERD");
   text = text.replace("St. Augustine", "PLACEHOLDERE");
+  text = text.replace("St. Andrews", "PLACEHOLDERF");
+  text = text.replace("St. Katherine", "PLACEHOLDERG");
+  text = text.replace("St. Joseph", "PLACEHOLDERH");
 
   text = text.replace(/Advent[.]/g, "Adventist");
   text = text.replace(/Ala[.]/g, "Alabama");
@@ -19,6 +22,8 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Aq[.]/g, "Aquinas");
   text = text.replace(/Ariz[.]/g, "Arizona");
   text = text.replace(/Ark[.]/g, "Arkansas");
+  text = text.replace(/Atl[.]/g, "Atlantic");
+  text = text.replace(/B'dino/g, "Bernardino");
   text = text.replace(/B'klyn/g, "Brooklyn");
   text = text.replace(/Bapt[.]/g, "Baptist");
   text = text.replace(/Barb[.]/g, "Barbara");
@@ -39,10 +44,11 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Conc[.]/g, "Concordia");
   text = text.replace(/ Conn[.]/g, " Connecticut");
   text = text.replace(/D'son/g, "Dickinson");
-  text = text.replace(/E[.]/g, "East");
+  text = text.replace(/ E[.]/g, " East");
   text = text.replace(/East[.]/g, "Eastern");
   text = text.replace(/Eng[.]/g, "Engalnd");
   text = text.replace(/Fair[.]/g, "Fairbanks");
+  text = text.replace(/Fam[.]/g, "Family");
   text = text.replace(/Fla[.]/g, "Florida");
   text = text.replace(/FL/g, "Florida");
   text = text.replace(/[(]Florida[)]/g, "(FL)");
@@ -68,10 +74,13 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Miss[.]/g, "Mississippi");
   text = text.replace(/Mo[.]/g, "Missouri");
   text = text.replace(/[(]Mont[.][)]/g, "(MT)");
+  text = text.replace(/Mont[.]/g, "Montana");
   text = text.replace(/[(]Neb[.][)]/g, "(NE)");
+  text = text.replace(/Neb[.]/g, "Nebraska");
   text = text.replace(/N'western/g, "Northwestern");
   text = text.replace(/N'west/g, "Northwest");
   text = text.replace(/N[.]C[.]/g, "North Carolina");
+  text = text.replace(/N[.]H[.]/g, "New Hampshire");
   text = text.replace(/N[.]M[.]/g, "New Mexico");
   text = text.replace(/N[.]O[.]/g, "New Orleans");
   text = text.replace(/[(]N[.]Y[.][)]/g, "(NY)");
@@ -80,6 +89,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/[(]Ohio[)]/g, "(OH)");
   text = text.replace(/Okla[.]/g, "Oklahoma");
   text = text.replace(/[(]Pa[.][)]/g, "(PA)");
+  text = text.replace(/Pitt[.]/g, "Pittsburgh");
   text = text.replace(/R[.]I[.]/g, "RI");
   text = text.replace(/S. Carolina/g, "South Carolina");
   text = text.replace(/S[.]C[.]/g, "South Carolina");
@@ -95,6 +105,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/[(]Tennessee[)]/g, "(TN)");
   text = text.replace(/ U[.]/g, " University");
   text = text.replace(/ Univ[.]/g, "");
+  text = text.replace(/Va[.]/g, "Virginia");
   text = text.replace(/Val[.]/g, "Valley");
   text = text.replace(/Vall[.]/g, "Valley");
   text = text.replace(/Wash[.]/g, "Washington");
@@ -115,6 +126,29 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDERC", "St. Mar");
   text = text.replace("PLACEHOLDERD", "St. Cloud");
   text = text.replace("PLACEHOLDERE", "St. Augustine");
+  text = text.replace("PLACEHOLDERF", "St. Andrews");
+  text = text.replace("PLACEHOLDERG", "St. Katherine");
+  text = text.replace("PLACEHOLDERH", "St. Joseph");
+
+  return text;
+}
+
+exports.removeStatusText = function(text) {
+  text = text.replace(/First Round/gi, "");
+  text = text.replace(/Second Round/gi, "");
+  text = text.replace(/Third Round/gi, "");
+  text = text.replace(/Quarterfinals/gi, "");
+  text = text.replace(/Semifinals/gi, "");
+  text = text.replace(/Championship/gi, "");
+  text = text.replace(/Sweet 16/gi, "");
+  text = text.replace(/Elite Eight/gi, "");
+  text = text.replace(/Final Four/gi, "");
+
+  text = text.replace(/ABC/gi, "");
+  text = text.replace(/ESPN2/gi, "");
+  text = text.replace(/ESPN3/gi, "");
+  text = text.replace(/ESPNU/gi, "");
+  text = text.replace(/ESPN/gi, "");
 
   return text;
 }

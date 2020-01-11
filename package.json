@@ -1,6 +1,6 @@
 {
   "name": "ncaa-text-corrections",
-  "version": "0.1.5",
+  "version": "0.2.9",
   "description": "Some team name cleaning from scraping NCAA website.",
   "main": "index.js",
   "author": "Roger Xue",
