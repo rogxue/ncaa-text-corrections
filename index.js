@@ -14,11 +14,13 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Andrews", "PLACEHOLDERF");
   text = text.replace("St. Katherine", "PLACEHOLDERG");
   text = text.replace("St. Joseph", "PLACEHOLDERH");
+  text = text.replace("St. Ambrose", "PLACEHOLDERI");
 
   text = text.replace(/Advent[.]/g, "Adventist");
   text = text.replace(/Ala[.]/g, "Alabama");
   text = text.replace(/Alas[.]/g, "Alaska");
   text = text.replace(/Anch[.]/g, "Anchorage");
+  text = text.replace(/App State/g, "Appalachian State");
   text = text.replace(/Aq[.]/g, "Aquinas");
   text = text.replace(/Ariz[.]/g, "Arizona");
   text = text.replace(/Ark[.]/g, "Arkansas");
@@ -129,6 +131,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDERF", "St. Andrews");
   text = text.replace("PLACEHOLDERG", "St. Katherine");
   text = text.replace("PLACEHOLDERH", "St. Joseph");
+  text = text.replace("PLACEHOLDERI", "St. Ambrose");
 
   return text;
 }
@@ -149,6 +152,9 @@ exports.removeStatusText = function(text) {
   text = text.replace(/ESPN3/gi, "");
   text = text.replace(/ESPNU/gi, "");
   text = text.replace(/ESPN/gi, "");
+
+  text = text.replace(/EDT/gi, "");
+  text = text.replace(/EST/gi, "");
 
   return text;
 }
