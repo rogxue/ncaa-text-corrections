@@ -15,6 +15,8 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Katherine", "PLACEHOLDERG");
   text = text.replace("St. Joseph", "PLACEHOLDERH");
   text = text.replace("St. Ambrose", "PLACEHOLDERI");
+  text = text.replace("Ole Miss.", "PLACEHOLDERJ");
+  text = text.replace("St. Anselm", "PLACEHOLDERK");
 
   text = text.replace(/Advent[.]/g, "Adventist");
   text = text.replace(/Ala[.]/g, "Alabama");
@@ -32,6 +34,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/C[.]C[.]/g, "Corpus Christi");
   text = text.replace(/[(]Cal[.][)]/g, "(CA)");
   text = text.replace(/[(]Calif[.][)]/g, "(CA)");
+  text = text.replace(/Camp[.]/g, "Campbellsville");
   text = text.replace(/Caro[.]/g, "Carolina");
   text = text.replace(/Cent[.]/g, "Central");
   text = text.replace(/Champion Chris[.]/g, "Champion Christian");
@@ -59,7 +62,8 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Geo[.]/g, "George");
   text = text.replace(/[(]Ill[.][)]/g, "(IL)");
   text = text.replace(/Ill[.]/g, "Illinois");
-  text = text.replace(/Ind[.]/g, "IN");
+  text = text.replace(/[(]Ind[.][)]/g, "(IN)");
+  text = text.replace(/Ind[.]/g, "Indiana");
   text = text.replace(/Int'l/g, "International");
   text = text.replace(/Jeff[.]/g, "Jefferson");
   text = text.replace(/John[.] /g, "Johnson ");
@@ -132,6 +136,8 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDERG", "St. Katherine");
   text = text.replace("PLACEHOLDERH", "St. Joseph");
   text = text.replace("PLACEHOLDERI", "St. Ambrose");
+  text = text.replace("PLACEHOLDERJ", "Ole Miss.");
+  text = text.replace("PLACEHOLDERK", "St. Anselm");
 
   return text;
 }
