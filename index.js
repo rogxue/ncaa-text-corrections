@@ -17,6 +17,9 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("St. Ambrose", "PLACEHOLDERI");
   text = text.replace("Ole Miss.", "PLACEHOLDERJ");
   text = text.replace("St. Anselm", "PLACEHOLDERK");
+  text = text.replace("St. Paul", "PLACEHOLDERL");
+  text = text.replace("Southern Miss.", "PLACEHOLDERM");
+  text = text.replace("St. Norbert", "PLACEHOLDERN");
 
   text = text.replace(/Advent[.]/g, "Adventist");
   text = text.replace(/Ala[.]/g, "Alabama");
@@ -31,6 +34,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/B'klyn/g, "Brooklyn");
   text = text.replace(/Bapt[.]/g, "Baptist");
   text = text.replace(/Barb[.]/g, "Barbara");
+  text = text.replace(/Bib[.]/g, "Bible");
   text = text.replace(/C[.]C[.]/g, "Corpus Christi");
   text = text.replace(/[(]Cal[.][)]/g, "(CA)");
   text = text.replace(/[(]Calif[.][)]/g, "(CA)");
@@ -38,6 +42,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Caro[.]/g, "Carolina");
   text = text.replace(/Cent[.]/g, "Central");
   text = text.replace(/Champion Chris[.]/g, "Champion Christian");
+  text = text.replace(/Yellowstone Chris[.]/g, "Yellowstone Christian");
   text = text.replace(/Chris[.]/g, "Christopher");
   text = text.replace(/Christ[.]/g, "Christian");
   text = text.replace(/Cin[.]/g, "Cincinnati");
@@ -49,6 +54,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Conc[.]/g, "Concordia");
   text = text.replace(/ Conn[.]/g, " Connecticut");
   text = text.replace(/D'son/g, "Dickinson");
+  text = text.replace(/Dom[.]/g, "Dominguez");
   text = text.replace(/ E[.]/g, " East");
   text = text.replace(/East[.]/g, "Eastern");
   text = text.replace(/Eng[.]/g, "Engalnd");
@@ -77,8 +83,10 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/Mem[.]/g, "Memorial");
   text = text.replace(/Mich[.]/g, "Michigan");
   text = text.replace(/[(]Minn[.][)]/g, "(MN)");
+  text = text.replace(/Minn[.]/g, "Minnesota");
   text = text.replace(/Miss[.]/g, "Mississippi");
   text = text.replace(/Mo[.]/g, "Missouri");
+  text = text.replace(/M'head/g, "Morehead");
   text = text.replace(/[(]Mont[.][)]/g, "(MT)");
   text = text.replace(/Mont[.]/g, "Montana");
   text = text.replace(/[(]Neb[.][)]/g, "(NE)");
@@ -94,6 +102,7 @@ exports.teamNameCorrections = function(text) {
   text = text.replace(/N[.] Central/g, "North Central");
   text = text.replace(/[(]Ohio[)]/g, "(OH)");
   text = text.replace(/Okla[.]/g, "Oklahoma");
+  text = text.replace(/Ore[.]/g, "Oregon");
   text = text.replace(/[(]Pa[.][)]/g, "(PA)");
   text = text.replace(/Pitt[.]/g, "Pittsburgh");
   text = text.replace(/R[.]I[.]/g, "RI");
@@ -136,8 +145,23 @@ exports.teamNameCorrections = function(text) {
   text = text.replace("PLACEHOLDERG", "St. Katherine");
   text = text.replace("PLACEHOLDERH", "St. Joseph");
   text = text.replace("PLACEHOLDERI", "St. Ambrose");
-  text = text.replace("PLACEHOLDERJ", "Ole Miss.");
+  text = text.replace("PLACEHOLDERJ", "Ole Miss");
   text = text.replace("PLACEHOLDERK", "St. Anselm");
+  text = text.replace("PLACEHOLDERL", "St. Paul");
+  text = text.replace("PLACEHOLDERM", "Southern Miss");
+  text = text.replace("PLACEHOLDERN", "St. Norbert");
+
+  return text;
+}
+
+exports.espnTeamNameCorrections = function(text) {
+  text = text.replace("Long Island University", "Long Island");
+  text = text.replace("Ottawa University Arizona", "Ottawa (AZ)");
+  text = text.replace("SE Louisiana", "Southeastern Louisiana");
+  text = text.replace("St. Francis (BKN)", "St. Francis (Brooklyn)");
+  text = text.replace("St. Thomas - Minnesota", "St. Thomas (MN)");
+  text = text.replace("SW Christian Univ", "Southwestern Christian");
+  text = text.replace("Tarleton", "Tarleton State");
 
   return text;
 }
